@@ -8,6 +8,10 @@
     color: #243e63;
 }
 
+a {
+    text-decoration: none;
+}
+
 .purple {
     color: #6415ff;
 }
@@ -39,7 +43,7 @@ li {
     margin: 0 auto;
 }
 
-.Logo {
+.logo {
     height: 40px;
     width: 40px;
 }
@@ -48,9 +52,27 @@ li {
 nav {
    display: flex;
    justify-content: space-between;
+   align-items: center;
   
 }
 
+.nav__link {
+    margin: 0px 24px;
+    font-weight: bold;
+   
+}
+
+.nav__link--primary {
+    background-color: #6415ff;
+    color: white;
+    border-radius: 50px;
+}
+
+.logo__name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 12px;
+}
 
 .logo__container {
  display: flex;
@@ -66,6 +88,9 @@ nav {
     padding: 12px 24px;  
 }
 
+.container {
+    padding: 96px 0;
+}
 
 
 /*
@@ -83,9 +108,94 @@ header {
 
 }
 
+.header__email {
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    position: relative;
+    display: flex
+;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__email--btn {
+    z-index: 2;
+    margin: 8px;
+    height: calc(100% - 16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms 
+ease;
+}
+
+.header__email--input {
+    width: 100%;
+    border-radius: 500px;
+    border: 2px solid rgb(229, 231, 235);
+    padding: 20px 192px 20px 32px;
+    color: rgb(36, 62, 99);
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: border-color 300ms;
+}
+
+    header .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header__container {
+    display: flex;
+    justify-content: center;
+}
+
+.header__img--wrapper {
+    width: 60%;
+    padding-bottom: 24px;
+}
+
 .header__description {
+    width: 40%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.header__description--title {
+    margin-bottom: 32px;
+    font-size: 42px;
+    padding-left: 24px;
+}
+
+.header__description--para {
+    margin-bottom: 32px;
+    padding-left: 24px;
+}
+
+.header__email {
+    margin-bottom: 52px;
+}
+
+.header__customers--title {
+    display: flex;
+    padding-right: 225px;
+    font-size: 8px;
+}
+
+.headers__customers {
+    padding:12px 48px;
 }
