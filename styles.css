@@ -8,6 +8,23 @@
     color: #243e63;
 }
 
+.purple {
+    color: #6415ff;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    color: #6415ff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 ul{
  display: flex;
 }
@@ -22,26 +39,53 @@ li {
     margin: 0 auto;
 }
 
+.Logo {
+    height: 40px;
+    width: 40px;
+}
+
+
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   display: flex;
+   justify-content: space-between;
+  
 }
 
-.nav__link--primary {
-    border-radius: 50%;
-}
 
-.Logo__container {
+.logo__container {
  display: flex;
  justify-content: space-between;
+ align-items: center;
+ margin-left: 24px;
 }
 
-.nav__container{
+.nav__container{   
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
-   
+    padding: 12px 24px;  
 }
 
+
+
+/*
+
+LANDING
+
+*/
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.header__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
