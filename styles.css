@@ -319,10 +319,11 @@ QUALITY
 }
 
 .quality__btn {
-    margin-right: 440px;
+    margin: 0 350px 0 0px;
     display: flex;
     border: none;
     margin-top: 32px;
+    padding: 12px 32px;
 
 }
 
@@ -338,12 +339,21 @@ STEPS
 
 .steps__img--wrapper {
     width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.steps__title {
+    margin: 16px 0;
 }
 
 .steps__description {
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    padding: 32px 0;
+    padding-left: 64px;
 }
 
 .steps__list {
@@ -354,4 +364,49 @@ STEPS
 .step {
     display: flex;
     align-items: flex-start;
+    margin-top: 32px;
+}
+
+.step__number {
+    display: flex;
+    margin-right: 24px;
+    color: #cbd5e0;
+    font-size: 36px;
+}
+
+.step__description {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+/*
+
+VALUES
+
+*/
+
+.values__row {
+    display: flex;
+}
+
+.values__img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.values__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.values__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.values__list--description {
+    max-width: 250px;
 }
