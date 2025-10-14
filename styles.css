@@ -401,6 +401,10 @@ VALUES
     flex-direction: column;
 }
 
+.values__description--title {
+    margin: 16px 0 32px 0;
+}
+
 .values__list {
     display: flex;
     justify-content: space-between;
@@ -409,4 +413,21 @@ VALUES
 
 .values__list--description {
     max-width: 250px;
+}
+
+.values__list--item {
+    margin: 32px 32px 0 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.values__list--icon {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center; 
+}
+
+.values__img--wrapper {
+    /* */
 }
