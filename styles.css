@@ -50,6 +50,7 @@ li {
 
 
 nav {
+   padding-top: 32px;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -62,12 +63,26 @@ nav {
    
 }
 
+.nav__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    margin-left: 48px;
+}
+
 .nav__link--primary {
+    margin: 0 auto;
     background-color: #6415ff;
-    color: white;
     border-radius: 500px;
     border: 2px solid #6415ff;
-    padding:1px 32px;
+    padding:8px 32px;
+}
+
+.white {
+    color: white;
 }
 
 .logo__name {
@@ -78,7 +93,7 @@ nav {
 
 .logo__container {
  display: flex;
- justify-content: space-between;
+ /* justify-content: space-between; */
  align-items: center;
  margin-left: 24px;
 }
@@ -121,7 +136,7 @@ header {
     align-items: center;
 }
 
-.header__email--btn {
+.header__email--btn{
     z-index: 2;
     margin: 8px;
     height: calc(100% - 16px);
@@ -173,19 +188,17 @@ ease;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
 .header__description--title {
     margin-bottom: 32px;
     font-size: 42px;
-    padding-left: 24px;
 }
 
 .header__description--para {
     margin-bottom: 32px;
-    padding-left: 24px;
 }
 
 .header__email {
@@ -199,5 +212,22 @@ ease;
 }
 
 .headers__customers {
-    padding:12px 48px;
+    /* padding:12px 48px; */
+}
+
+/* 
+
+FEATURES
+
+*/
+
+.features__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features__description--para {
+    display: flex;
 }
