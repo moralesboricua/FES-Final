@@ -106,7 +106,7 @@ nav {
 }
 
 .container {
-    padding: 96px 0;
+    padding: 80px 0;
 }
 
 
@@ -228,6 +228,39 @@ FEATURES
     align-items: center;
 }
 
+.features__description--title {
+    font-size: 48px;
+    margin: 16px;
+}
+
 .features__description--para {
     display: flex;
+    text-align: center;
+    font-size: 18px;
+    color: #7c8ba1;
+    max-width: 580px;
+}
+
+.features__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.features__services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features__service {
+    display: flex;
+    width: calc(100% / 3);
+}
+
+.service {
+    display: flex;
+}
+
+.service__img {
+    width: 24px;
+    height: 24px;
 }
