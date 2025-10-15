@@ -213,6 +213,7 @@ ease;
     display: flex;
     padding-right: 260px;
     font-size: 8px;
+    color: #a0aec0;
 }
 
 /* headers__customers {
@@ -290,6 +291,7 @@ FEATURES
 
 .service_description {
     margin-bottom: 32px;
+    color: #7c8ba1;
 }
 
 /*
@@ -307,6 +309,10 @@ QUALITY
     display: flex;
     flex-direction: column;
     margin-right: 64px;
+}
+
+.quality__description--para {
+    color: #7c8ba1;
 }
 
 .quality__description--title {
@@ -380,11 +386,23 @@ STEPS
     max-width: 350px;
 }
 
+.step__description--para {
+    color: #7c8ba1;
+}
+
 /*
 
 VALUES
 
 */
+
+.values__btn {
+    margin-top: 48px;
+    padding: 12px 32px;
+    border: none;
+    display: flex;
+    margin-right: 385px;
+}
 
 .values__row {
     display: flex;
@@ -399,6 +417,11 @@ VALUES
     width: 50%;
     display: flex;
     flex-direction: column;
+    padding: 32px 64px 32px 0;
+}
+
+.values__description--para {
+    color: #7c8ba1;
 }
 
 .values__description--title {
@@ -407,12 +430,16 @@ VALUES
 
 .values__list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    align-content: center;
+    
 }
 
 .values__list--description {
     max-width: 250px;
+    margin-top: 16px;
+    /* color: #718096; */
+    color: #7c8ba1;
 }
 
 .values__list--item {
@@ -424,10 +451,63 @@ VALUES
 
 .values__list--icon {
     display: flex;
-    justify-content: flex-start;
     align-content: center; 
 }
 
-.values__img--wrapper {
-    /* */
+.values__list--name {
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #243e63;
+    display: flex;
+    align-items: center;
 }
+
+.values__img--wrapper {
+
+    background-color: #9ae6b4;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.values__img--wrapper2 {
+    background-color: #feb2b2;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.values__dollar-sign,
+.values__briefcase {
+    height: 20px;
+    width: 20px;
+}
+
+/*
+
+PRICING
+
+*/
+.pricing__title {
+    margin: 16px 0;
+}
+
+.pricing__plans {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plan {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+}
+
