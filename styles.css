@@ -588,7 +588,7 @@ PRICING
 }
 
 .plan:nth-child(2) .plan__btn {
-   color: #6415ff;
+    color: #6415ff;
     background-color: #f7fafc;
     border: none;
     padding: 16px 32px;
@@ -622,6 +622,62 @@ TESTIMONIALS
 .customer__img--wrapper {
     width: 80px;
     height: 80px;
+}
+
+.review__bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.review__customer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.customer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 24px;
+}
+
+.customer__btn {
+    display: flex;
+    align-items: center;
+    
+}
+
+.customer__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #edf2f7;
+    border: none;
+     padding: 16px;
+    margin: 0 12px;
+    
+}
+
+.btn {
+    color: #6415ff;
+    width: 16px;
+    height: 16px;
+}
+
+.customer__btn--divider {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-right-width: 1px;
+    width: 0.5px;
+    background-color: #edf2f7;
+    height: 20px;
+}
+
+
+.customer__img {
     border-radius: 50%;
 }
 
@@ -653,4 +709,43 @@ TESTIMONIALS
     color: #fabf2a;
     margin-right: 2px;
     margin-top: 4px;
+}
+
+.review__title {
+    margin-top: 16px;
+}
+
+.review__para {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+/*
+
+START
+
+*/
+
+.start__row {
+    display: flex;
+    align-content: center;
+}
+
+.start__container {
+    padding: 96px 0;
+    width: 100%;
+    background-color: rgb(100, 21, 255);
+}
+
+.start__row:nth-child(1) .start__btn {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    border: none;
+    padding: 16px 32px;
+}
+
+.start__row:nth-child(2) .start__btn {
+    border: none;
+    padding: 16px 32px;
+    background: rgb(100, 21, 255);
 }
