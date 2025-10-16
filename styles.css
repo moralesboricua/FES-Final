@@ -508,7 +508,7 @@ PRICING
 }
 
 .plan {
-    width: calc(100%/3);
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -528,19 +528,18 @@ PRICING
     color: white;
 }
 
-
-.plan__stripe {
-    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-
-} 
-
-.plan__stripe2 {
-
+.plan:nth-child(1) .plan__stripe {
+  background: linear-gradient(115deg, rgb(56, 178, 172), rgb(129, 230, 217));
 }
 
-.plan__stripe3 {
-
+.plan:nth-child(2) .plan__stripe {
+  background: linear-gradient(135deg, rgb(76, 81, 191), rgb(102, 126, 234));
 }
+
+.plan:nth-child(3) .plan__stripe {
+  background: linear-gradient(115deg, rgb(245, 101, 101), rgb(254, 178, 178));
+}
+
 
 .plan__top {
     display: flex;
