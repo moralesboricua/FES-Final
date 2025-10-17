@@ -23,8 +23,6 @@ img {
 button {
     background-color: #6415ff;
     color: white;
-    /* border: none; */
-    /* padding: 12px 24px; */
     font-size: 16px;
     cursor: pointer;
 
@@ -97,7 +95,6 @@ nav {
 
 .logo__container {
  display: flex;
- /* justify-content: space-between; */
  align-items: center;
  margin-left: 24px;
 }
@@ -215,12 +212,6 @@ header {
     color: #a0aec0;
 }
 
-/* headers__customers {
-     padding:12px 48px;
-} */
-
-
-
 /* 
 
 FEATURES
@@ -304,7 +295,6 @@ QUALITY
 
 .quality__description {
     width: 50%;
-    /* height: 100%; */
     display: flex;
     flex-direction: column;
     margin-right: 64px;
@@ -431,7 +421,6 @@ VALUES
 
 .values__list {
     display: flex;
-    /* justify-content: space-between; */
     align-content: center;
     
 }
@@ -439,7 +428,6 @@ VALUES
 .values__list--description {
     max-width: 250px;
     margin-top: 16px;
-    /* color: #718096; */
     color: #7c8ba1;
 }
 
@@ -513,9 +501,6 @@ PRICING
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding-left: 32px;
-    padding-right: 32px; */
-    /* padding: 8px 32px 0 32px; */
     margin: 64px 32px 0 0;
     border-radius: 10px;
     background-color: rgb(255 255 255);
@@ -754,20 +739,14 @@ START
     color: #f7fafc;
     background: #f56565;
     border: none;
-    padding: 16px 32px;
     margin-right: 32px;
-    width: 100%;
     transition: all 300ms ease;
 }
 
 .start__btn:nth-child(2) {
-    /* border: none;
-    padding: 16px 32px;  */
-    width: 100%;
     background: rgb(100, 21, 255);
     border: 1px solid rgb(160, 174, 192);
     transition: all 300ms ease;
-    margin: 1px;
 }
 
 .start__para {
@@ -778,7 +757,6 @@ START
 .start__buttons {
     display: flex;
     justify-content: flex-end;
-    width: 50%;
 }
 
 .start__btn {
@@ -792,4 +770,27 @@ START
     color: #f7fafc;
     font-size: 30px;
     font-weight: 700;
+}
+
+/*
+
+FOOTER
+
+*/
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
