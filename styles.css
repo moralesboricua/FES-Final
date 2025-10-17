@@ -778,6 +778,16 @@ FOOTER
 
 */
 
+.footer__container {
+    padding: 96px 0;
+    width: 100%;
+    background-color: rgb(100, 21, 255);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer__row {
     display: flex;
     flex-direction: column;
@@ -793,4 +803,7 @@ FOOTER
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-top: 2px solid rgb(229, 231, 235);
+    width: 100%;
+
 }
