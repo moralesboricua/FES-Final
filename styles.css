@@ -125,6 +125,7 @@ nav {
 }
 
 .menu__backdrop {
+
     position: absolute;
     background-color: #242424;
     top: 0;
@@ -140,6 +141,7 @@ nav {
     visibility: hidden;
 
 }
+
 
 .menu--open .menu__backdrop {
     visibility: visible;
@@ -576,10 +578,13 @@ PRICING
 .pricing__plans {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .plan {
-    width: 30%;
+    width: calc(30%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -592,6 +597,10 @@ PRICING
 
 .plan:nth-child(2) {
     background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.pricing__plans:nth-child(3) .plan{
+    margin-right: 0;
 }
 
 .color {
@@ -983,6 +992,22 @@ MEDIA
 
 @media (max-width: 768px) {
 
+    .header__row {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .header__description {
+        height: 50%;
+        width: 60%;
+    }
+
+    .header__email--input {
+        position: absolute;
+        width: 100%;
+    }
+
   .features__services {
     justify-content: center;
   }
@@ -1025,11 +1050,21 @@ MEDIA
   .love__img {
     width: 100%;
     max-width: 448px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   #Steps .row,
   #Testimonials .row {
     flex-direction: column;
     align-items: center;
+  }
+
+  .customer__testimonial {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .steps__description {
@@ -1065,6 +1100,25 @@ MEDIA
   #Pricing .row {
     margin-top: 40px;
   }
+
+.pricing__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  .pricing__plans {
+    flex-direction: column;
+    
+  }
+
+  .plan {
+    width: 50%;
+    margin-top: 64px;
+  }
+
 
   .testimonials__description {
     padding-left: 0;
@@ -1103,6 +1157,14 @@ MEDIA
   .footer__socials {
     margin-left: 0px;
   }
+
+  .nav__links {
+    display: none;
+  }
+
+  .button__menu {
+    display: block;
+}
 
 /*
   .footer__social--link:first-child {
