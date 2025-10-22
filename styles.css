@@ -54,7 +54,7 @@ li {
 nav {
    padding-top: 32px;
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
   
 }
@@ -89,7 +89,7 @@ nav {
 
 .logo__name {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 900;
     margin-left: 12px;
 }
 
@@ -103,12 +103,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 24px;  
+    padding: 12px 24px;
+    margin: 0;  
 }
 
 .container {
     padding: 80px 0;
 }
+
 
 /* HAMBURGER MENU */
 
@@ -270,6 +272,7 @@ header {
 .header__description--title {
     margin-bottom: 32px;
     font-size: 36px;
+    font-weight: 700;
 }
 
 .header__description--para {
@@ -283,7 +286,7 @@ header {
 
 .header__customers--title {
     display: flex;
-    padding-right: 260px;
+    justify-content: flex-start;
     font-size: 12px;
     color: #a0aec0;
 }
@@ -314,6 +317,7 @@ FEATURES
 .features__description--title {
     font-size: 48px;
     margin: 16px;
+    font-weight: 900;
 }
 
 .features__description--para {
@@ -349,6 +353,7 @@ FEATURES
 
 .service__title {
     font-size: 24px;
+    font-weight: 700;
 }
 
 .service__description {
@@ -403,11 +408,13 @@ QUALITY
 .quality__description--para {
     color: #7c8ba1;
     font-size: 18px;
+    text-align: center;
 }
 
 .quality__description--title {
     margin: 16px 0;
     font-size: 48px;
+    font-weight: 700;
 }
 
 .quality__img--wrapper {
@@ -453,6 +460,7 @@ STEPS
 .steps__title {
     margin: 16px 0;
     font-size: 48px;
+    font-weight: 700;
 }
 
 .steps__header {
@@ -509,7 +517,7 @@ VALUES
     padding: 12px 32px;
     border: none;
     display: flex;
-    max-width: 160px;
+    max-width: 145px;
     transition: all 300ms ease;
     font-size: 14px;
 }
@@ -537,11 +545,13 @@ VALUES
 .values__description--para {
     color: #7c8ba1;
     font-size: 18px;
+    text-align: center;
 }
 
 .values__description--title {
     margin: 16px 0 32px 0;
     font-size: 48px;
+    font-weight: 700;
 }
 
 .values__list {
@@ -575,6 +585,7 @@ VALUES
     color: #243e63;
     display: flex;
     align-items: center;
+    font-weight: 700;
 }
 
 .values__img--wrapper {
@@ -615,14 +626,17 @@ PRICING
 .pricing__title {
     margin: 16px 0;
     font-size: 48px;
+    font-weight: 700;
 }
 
 .pricing__header {
     font-size: 16px;
 }
 
-.pricing___description {
-    font-size: 18px;
+.pricing__description {
+    font-size: 14px;
+    max-width: 576px;
+    text-align: center;
 }
 
 .pricing__plans {
@@ -636,6 +650,8 @@ PRICING
 
 .plan__btn {
     font-size: 14px;
+    max-width: none;
+    width: 100%;
 }
 
 .pricing__info {
@@ -668,6 +684,7 @@ PRICING
 
 .plan__duration {
     font-size: 16px;
+    color: #a0aec0;
 }
 
 .plan:nth-child(2) {
@@ -733,14 +750,21 @@ PRICING
 .plan:nth-child(2) .plan__middle {
     border-top: 2px solid rgb(102, 126, 234);
     border-bottom: 2px solid rgb(102, 126, 234);
+
 }
 
 .plan__info {
     margin-top: 20px;
+    color: #a0aec0;
+}
+
+.plan:nth-child(2) .plan__info {
+    color: #ffffff;
 }
 
 .plan__bottom {
     padding: 32px 32px;
+    width: 100%;
 }
 
 .plan:nth-child(1) .plan__btn {
@@ -778,6 +802,10 @@ TESTIMONIALS
     margin: 0 auto;
     align-content: center;justify-content: center;
     width: 100%;
+}
+
+.customer__name {
+    font-weight: 700;
 }
 
 .love__img {
@@ -854,6 +882,14 @@ TESTIMONIALS
     padding-left: 64px;
 }
 
+.testimonial__header {
+    font-size: 16px;
+}
+
+.testimonial__para {
+    font-size: 16px
+}
+
 .review {
     display: flex;
     flex-direction: column;
@@ -864,6 +900,8 @@ TESTIMONIALS
 .testimonial__title {
     margin-top: 16px;
     margin-bottom: 24px;
+    font-size: 48px;
+    font-weight: 700;
 }
 
 .review {
@@ -878,6 +916,8 @@ TESTIMONIALS
 
 .review__title {
     margin-top: 16px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .review__para {
@@ -968,6 +1008,9 @@ footer {
     flex-wrap: wrap;
     margin-top: -48px;
 }
+.logo__name {
+    font-size: 20px;
+}
 
 .footer__links {
     display: flex;
@@ -979,6 +1022,7 @@ footer {
 
 .footer__link {
     margin-top: 12px;
+    font-size: 14px;
 }
 
 .footer__link:nth-child(2) {
@@ -1016,57 +1060,6 @@ MEDIA
 */
 
 
-
-/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
-
-/* @media (max-width: 768px) {
-    .header__description {
-        padding: 0 24px;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 26px;
-    }
-
-    button {
-        font-size: 18px;
-    }
-
-    .book {
-        width: 50%;
-    }
-
-}
-
-*/
-
-/* SMALL PHONES, LARGE SMARTPHONES */
-
-/* @media (max-width: 550px) {
-    .nav__links {
-        display: none;
-    }
-
-    .button__menu {
-        display: block;
-    }
-
-    .highlight {
-        width: 100%;  
-    }
-
-    .highlight:not(:last-child) {
-        margin-bottom: 24px;
-    }
-}
-
-*/
-
-
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 
 
@@ -1095,6 +1088,7 @@ MEDIA
     width: auto;
     max-width: 384px;
   }
+
   .section__para {
     font-size: 14px;
   }
@@ -1194,9 +1188,13 @@ MEDIA
     
   }
 
+  .pricing__title {
+    text-align: center;
+  }
+
   .plan {
     width: 50%;
-    margin-top: 64px;
+    margin: 64px 0;
   }
 
 
@@ -1246,18 +1244,10 @@ MEDIA
     display: block;
 }
 
-/*
-  .footer__social--link:first-child {
-    margin-left: 0px;
-  }
+/* SMALL PHONES, LARGE SMARTPHONES */
 
-  */
-}
-
-
-/*
 @media (max-width: 576px) {
-  .section__title {
+  .testimonial__title {
     line-height: 1.25;
   }
   .container {
@@ -1284,48 +1274,63 @@ MEDIA
     margin-bottom: 0px;
     line-height: 1.5;
   }
+
+.header__description{
+    align-items: center;
+}
+.headers__customers {
+    margin-top: 16px;
+}
   .header__customers--title {
     font-size: 14px;
     letter-spacing: 0.05em;
   }
-  .section__title {
+  .testimonial__title {
     font-size: 30px;
   }
-  #features .section__title,
-  #pricing .section__title {
+  .features__description--title,
+  .pricing__title {
     font-size: 36px;
   }
-  .feature__row {
+  .service {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .feature__title {
+  .service__title {
     letter-spacing: 0.025em;
     line-height: 1;
   }
-  .feature__text {
+  .features__text {
     margin-left: 0px;
     margin-top: 16px;
   }
-  .feature__para {
+  .service__description {
     margin-top: 4px;
     line-height: 2;
   }
-  #steps .section__title {
+  .steps__title {
     margin: 16px 0 0 0;
   }
   .steps__list {
     margin-top: 48px;
   }
-  .btn {
+  .quality__btn {
     line-height: 1.5;
   }
-  .plan__price {
+  .plan__pricing {
     font-size: 36px;
   }
   .plan__bottom {
     padding: 2rem 1rem;
+  }
+
+  .plan__button {
+    max-width: 100%;
+  }
+
+  .plan {
+    width: 70%;
   }
   .testimonial__para {
     margin-bottom: 32px;
@@ -1362,29 +1367,34 @@ MEDIA
   .start__button:nth-child(1) {
     margin-right: 0;
   }
-  .start__button {
+  .start__buttons {
     padding: 12px 24px;
     font-size: 14px;
   }
-  .start__button:nth-child(2) {
+  .start__buttons:nth-child(2) {
     margin-top: 16px;
   }
   main {
     margin-bottom: 80px;
   }
-  .footer__columns {
+  .footer__sectioning {
     justify-content: center;
   }
-  .footer__column {
+  .footer__links {
     width: auto;
     padding: 0 16px;
     text-align: center;
+    justify-content: center;
     align-items: center;
   }
   .footer__copyright {
     font-size: 14px;
     text-align: center;
     line-height: 1.5;
+  }
+
+  .start__btn:nth-child(1) {
+    margin: 0;
   }
 }
 
