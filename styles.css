@@ -98,14 +98,13 @@ nav {
 .logo__container {
  display: flex;
  align-items: center;
- margin-left: 24px;
+
 }
 
 .nav__container{   
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 24px;
     margin: 0;  
 }
 
@@ -164,10 +163,28 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .menu__list {
     padding: 32px 0;
+}
+
+.menu__list--btn {
+    max-width: 160px;
+    display: flex;
+    border: none;
+    padding: 12px 32px;
+    transition: all 300ms ease;
+    font-size: 18px;
+    margin: 0;
+    height: 48px;
+    align-items: center;
+}
+
+.menu__link--btn {
+    justify-content: center;
+    align-items: center;
 }
 
 .menu__link {
@@ -261,10 +278,10 @@ header {
 
 .header__description {
     width: 40%;
-    height: 100%;
+   /* height: 100%; */
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: column; 
     
 }
 
@@ -290,9 +307,6 @@ header {
     color: #a0aec0;
 }
 
-.header__row {
-    flex-wrap: wrap;
-}
 
 /* 
 
@@ -503,6 +517,7 @@ STEPS
 .step__description--para {
     color: #7c8ba1;
     font-size: 14px;
+    margin-top: 12px;
 }
 
 /*
@@ -1058,23 +1073,40 @@ MEDIA
 
 */
 
-
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 
 
 @media (max-width: 768px) {
 
+       .fa-solid {
+    --fa-style: 600;
+ }
+  
+    .button__menu {
+    padding: 0;
+    font-size: 24px;
+    font-weight: 200;
+  }
+
+  .logo__container {
+    margin: 0;
+  }
+
+  .nav__container {
+    padding: 0;
+  }
     .header__row {
         justify-content: center;
-        align-content: center;
+        flex-direction: column;
     }
     
 
     .header__description {
-        height: 50%;
+        /* height: 30%; */
         width: 60%;
         align-items: center;
         text-align: center;
+        margin: 0 96px;
     }
 
     .header__email--input {
@@ -1085,18 +1117,25 @@ MEDIA
     .header__email {
         margin: 0;
     }
-    .header__img {
+    /* .header__img {
         margin-top: 48px;
-    }
+    } */
     .header__img--wrapper {
         width: 100%;
         margin: 48px 96px 0 96px;
     }
 
+    header .header__img-wrapper {
+        justify-content: center;
+    }
+
     .header__description,
     .header__img {
         width: 100%;
+        max-width: 500px;
     }
+
+
 
     .header__customers--title {
         font-size: 14px;
@@ -1104,6 +1143,7 @@ MEDIA
     }
     .headers__customers {
         margin-top: 16px;
+        max-width: 500px;
     }
   .features__services {
     justify-content: center;
@@ -1187,6 +1227,12 @@ MEDIA
   .values__list {
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
+  }
+  .values__list--item {
+    margin: 32px 0 0 0;
+    align-items: center;
+    justify-content: center;
   }
   .value:nth-of-type(1) {
     margin-right: 0px;
@@ -1273,7 +1319,17 @@ MEDIA
 /* SMALL PHONES, LARGE SMARTPHONES */
 
 @media (max-width: 576px) {
-  .testimonial__title {
+  
+    .fa-solid {
+    --fa-style: 600;
+ }
+  
+    .button__menu {
+    padding: 0;
+    font-size: 24px;
+    font-weight: 200;
+  }
+    .testimonial__title {
     line-height: 1.25;
   }
   .container {
@@ -1285,6 +1341,9 @@ MEDIA
   .nav__logo {
     margin: 8px 0;
     padding-bottom: 4px;
+  }
+  .logo__container {
+    margin: 0;
   }
   .header__email {
     flex-direction: column;
@@ -1324,6 +1383,13 @@ MEDIA
 .header__description{
     align-items: center;
 }
+.header__description--title {
+    font-size: 30px;
+    margin: 0;
+}
+.header__description--para {
+    margin: 20px 0 20px 0;
+}
 .headers__customers {
     margin-top: 16px;
 }
@@ -1360,6 +1426,7 @@ MEDIA
   .service__description {
     margin-top: 4px;
     line-height: 2;
+    margin-bottom: 0;
   }
   .steps__title {
     margin: 16px 0 0 0;
