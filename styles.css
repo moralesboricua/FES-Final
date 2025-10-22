@@ -134,7 +134,6 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -1107,6 +1106,7 @@ MEDIA
         align-items: center;
         text-align: center;
         margin: 0 96px;
+        max-width: 500px;
     }
 
     .header__email--input {
@@ -1132,8 +1132,14 @@ MEDIA
     .header__description,
     .header__img {
         width: 100%;
+    }
+
+    .header__img {
+        justify-content: center;
         max-width: 500px;
     }
+
+
 
 
 
