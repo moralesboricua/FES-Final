@@ -1338,6 +1338,12 @@ MEDIA
   .pricing__title {
     font-size: 36px;
   }
+
+  .features__text {
+    align-items: center;
+    justify-content: center;
+  }
+
   .service {
     flex-direction: column;
     align-items: center;
