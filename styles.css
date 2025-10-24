@@ -131,10 +131,12 @@ nav {
 
     position: absolute;
     background-color: #ffffff;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 5;
+    left: 10;
+    right: 10;
     z-index: 100;
+    border: 1px solid lightgray;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,6 +145,8 @@ nav {
     visibility: hidden;
     margin: 24px 16px;
     padding: 32px;
+    transform: translateX(300%);
+    transition: all 300ms ease;
 
 }
 
@@ -150,6 +154,7 @@ nav {
 .menu--open .menu__backdrop {
     visibility: visible;
     opacity: 1;
+    transform: translateX(0);
 }
 
 .menu__open {
