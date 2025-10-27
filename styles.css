@@ -1103,7 +1103,11 @@ MEDIA
     padding: 0;
     font-size: 24px;
     font-weight: 200;
+    display: block;
   } 
+  .nav__links {
+    display: none;
+  }
 
   .logo__container {
     margin: 0;
